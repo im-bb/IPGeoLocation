@@ -2,28 +2,33 @@
 
 * A tool to retrieve IP Geolocation information
 * Powered by [ip-api](http://ip-api.com/docs/)
+---
 
-
-Requirements 
+### Requirements 
 
 * Python 3.x
 * termcolor
 * colorama
+---
 
-
-Download/Installation
-
+### Installation
+~~~
 * git clone https://github.com/maldevel/IPGeoLocation
 * pip3 install -r requirements.txt --user
-
+~~~
 if pip3 is missing:
+~~~
 * apt-get install python3-setuptools
 * easy_install3 pip
 * pip3 install -r requirements.txt
+~~~
+---
 
-
-Features
-
+### Features
+<details>
+  <summary><b>See Details</b></summary>
+<br/> 
+  
 * Retrieve IP or Domain Geolocation.
 * Retrieve your own IP Geolocation.
 * Retrieve Geolocation for IPs or Domains loaded from file. Each target in new line.
@@ -33,10 +38,15 @@ Features
 * Select random proxy from file. Each proxy URL in new line.
 * Open IP geolocation in Google Maps using the default browser.
 * Export results to csv, xml and txt format.
+  
+</details>  
 
+---
 
-Geolocation Information 
-
+### Geolocation Information 
+<details>
+  <summary><b>See Details</b></summary>
+<br/>   
 * ASN
 * City
 * Country
@@ -48,11 +58,17 @@ Geolocation Information
 * Region Code
 * Region Name
 * Timezone
-* Zip Code
+* Zip Code 
+ 
+</details>
 
+---
 
-Usage
-
+### Usage
+<details>
+  <summary><b>See Details</b></summary>
+<br/> 
+  
 ```
 $ ./ip2geolocation.py
 usage: ipgeolocation.py [-h] [-m] [-t TARGET] [-T file] [-u User-Agent]
@@ -90,10 +106,16 @@ files with this option.
   -ec file, --csv file  Export results in CSV format.
   -ex file, --xml file  Export results in XML format.
 ```
+</details>
+
+--- 
+
+### Examples
+<details>
+  <summary><b>See Details</b></summary>
+<br/> 
   
-
-Examples
-
+```  
 **Retrieve your IP Geolocation**
 * ./ip2geolocation.py -m
 
@@ -138,3 +160,7 @@ Examples
 
 **Do not print results to terminal**
 * ./ip2geolocation.py -m -e /path/to/results.txt --noprint 
+```
+</details>
+
+---
