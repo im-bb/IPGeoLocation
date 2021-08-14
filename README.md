@@ -49,7 +49,8 @@ if pip3 is missing:
 ### Geolocation Information 
 <details>
   <summary><b>See Details</b></summary>
-<br/>   
+<br/> 
+  
 * ASN
 * City
 * Country
